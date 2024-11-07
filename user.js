@@ -8,10 +8,12 @@ export let  nom = "Assane";
 nom de l'utilisateur
 prénom de l'utilisateur 
 village de l'utilisateur
-
 */
-let nomUtilisateur = {
-    nom: 'Saindou',
-    prenom: 'kaniza',
-    village: 'Boueni',
+
+
+// Ici, avec le modéle "export" ça me permet de d'expose "Utilisateur".
+export let Utilisateur = {
+    nom: "Kamal",
+    prenom: "Fatimata",
+    village: "Boueni",
 };

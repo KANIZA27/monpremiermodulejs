@@ -4,15 +4,24 @@ import getHeure from "./generate.js";
 // Ici, je importe la variable nom qui est déclarée dans le module "user.js"
 import {nom} from "./user.js";
 
-import{nomUtilisateur} from "./user.js";
 
-//let nomUtilisateur = document.querySelector("#nom")
-//nomUtilisateur.textContent = nom;
+// je importer l'objet utilisateur
+import {Utilisateur} from "./user.js";
 
-let nomUtilisateur1 = document.querySelector("#nom");
-nomUtilisateur.textContent = nomUtilisateur;
-let nomUtilisateur = document.querySelector("#prenom");
-nomUtilisateur.textContent = nomUtilisateur;
+let nomUtilisateur = document.querySelector("#nom")
+nomUtilisateur.textContent = nom;
+
+// Ici; je vais affichier mon span qui est "nomutilisateur".
+let elementSpanNom = document.querySelector("#nomutilisateur");
+elementSpanNom.textContent = Utilisateur.nom;
+
+// Ici, je vais affichier mon span qui est "prénomutilisateur".
+let elementSpanPrenom = document.querySelector("#prenomutilisateur");
+elementSpanPrenom.textContent = Utilisateur.prenom;
+
+//Ici, je vais affichier mon span qui est "villageutilisateur".
+let elementSpanVillage = document.querySelector("#villageutilisateur");
+elementSpanVillage.textContent = Utilisateur.village;
 
 /* ===== EXERCICE ====
 -- dans main.js --
